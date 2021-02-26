@@ -1,18 +1,8 @@
-This code written in C programming language and intended to be build with CMake tool.
+# NetworksLab2020
 
-To build:
-```
-$ mkdir build && cd build
-$ cmake ..
-$ cmake --build .
-```
+Протокол
 
-After build you will have two binaries in `build` directory:
-* server_linux
-* client_linux
-
-To run from `build` directory run following commands (each in separate terminal):
-```
-$ ./server_linux
-$ ./client_linux localhost 5001
-```
+После запуска клиентского приложения, пользователя просят ввсести никнейм.\
+Получаемое сообщение имеет ввид: <ЧЧ:ММ:СС> [Имя пользователя]: тескт \
+Вместе с тесктом сообщения, временем, именем пользователя также сереверу передаются данные о длине каждого атрибута.\
+Выход из клиентского приложения можно осуществить с помощью "-exit"
